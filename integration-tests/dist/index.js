@@ -36,6 +36,3 @@ exports.app.post("/sum", (req, res) => __awaiter(void 0, void 0, void 0, functio
     });
     res.json({ answer: result, id: request.id });
 }));
-exports.app.get('/', (req, res) => {
-    res.json({ message: "Hello World" });
-});
