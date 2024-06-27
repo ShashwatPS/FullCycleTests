@@ -26,4 +26,4 @@ jobs:
         run: docker-compose version
 
       - name: Run integration script
-        run: npm run test:integration
+        run: cd integration-tests && npm run test:integration
