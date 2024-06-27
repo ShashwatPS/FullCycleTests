@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test-integration": "wsl ../integration-tests/src/scripts/run-integration.sh"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,11 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "prisma": "^5.16.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0"
   }
 }
